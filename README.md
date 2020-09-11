@@ -2,7 +2,7 @@
 
 An AWS CDK Construct for defining AWS WAFs that allow an specified IP range access to an Amazon CloudFront distribution, an Amazon API Gateway REST API, or an Application Load Balancer.
 
-Example: Using the Construct to define IPs allowed to access an Amazon CloudFront distribution for an S3 based web-site. For a deploy-able sample refer to the "example" directory in this package.
+Example: Using the Construct to define IPs allowed to access an Amazon CloudFront distribution for an S3 based web-site.
 ```typescript
 import { App, Stack, RemovalPolicy } from '@aws-cdk/core';
 import * as cloudfront from '@aws-cdk/aws-cloudfront';
