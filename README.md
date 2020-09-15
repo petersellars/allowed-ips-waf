@@ -1,6 +1,11 @@
 # Allowed IPs WAF
 
-An AWS CDK Construct for defining AWS WAFs that allow an specified IP range access to an Amazon CloudFront distribution, an Amazon API Gateway REST API, or an Application Load Balancer.
+An AWS CDK Construct for defining AWS WAFs that allow a specified IP range access to an Amazon CloudFront distribution, an Amazon API Gateway REST API, or an Application Load Balancer.
+
+To install the package from a npm repository run:
+```shell
+$ npm i allowed-ips-waf
+```
 
 Example: Using the Construct to define IPs allowed to access an Amazon CloudFront distribution for an S3 based web-site.
 ```typescript
@@ -34,7 +39,7 @@ const webSiteBucket = new s3.Bucket(
     publicReadAccess: false,
     removalPolicy: RemovalPolicy.DESTROY,
     websiteIndexDocument: 'index.html',
-    websiteErrorDocument: 'error.html'
+    websiteErrorDocument: 'error-404.html'
   }
 );
 
@@ -63,6 +68,18 @@ const cloudFrontDistribution = new cloudfront.CloudFrontWebDistribution(
         ]
       }
     ],
+    errorConfigurations: [
+      {
+        errorCode: 403,
+        responsePagePath: '/error-403.html',
+        responseCode: 403
+      },
+      {
+        errorCode: 404,
+        responsePagePath: '/error-404.html',
+        responseCode: 404
+      }
+    ],
     webACLId: allowedIPsWaf.webACLId
   }
 );
@@ -73,7 +90,7 @@ new s3deploy.BucketDeployment(
   {
     /*
     Assuming there is an 'html' folder at the root of the CDK project
-    with index.html and error.html files.
+    with index.html, error-403.html, and error-404.html files.
     */
     sources: [
       s3deploy.Source.asset('./html')

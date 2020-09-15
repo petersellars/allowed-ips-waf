@@ -1,4 +1,4 @@
-/**
+/*
  * Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +32,7 @@ export class CloudFrontDistributionStack extends cdk.Stack {
       this,
       'WebSiteBucket',
       {
-        publicReadAccess: false, // NOTICE: Don't set this to true or the content will be accessible thru the S3 URL and its SOAP API.
+        publicReadAccess: false,
         removalPolicy: cdk.RemovalPolicy.DESTROY,
         websiteIndexDocument: 'index.html',
         websiteErrorDocument: 'error-404.html'
