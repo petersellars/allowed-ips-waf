@@ -18,7 +18,7 @@ import * as cdk from '@aws-cdk/core';
 import * as s3 from '@aws-cdk/aws-s3';
 import * as s3deploy from '@aws-cdk/aws-s3-deployment';
 import * as cloudfront from '@aws-cdk/aws-cloudfront';
-import { AllowedIPsWaf, IPScope, IPv4 } from '../../../lib';
+import { AllowedIPsWaf, IPScope, IPv4 } from 'allowed-ips-waf';
 
 export interface CloudFrontDistributionStackProps extends cdk.StackProps {
   allowedIPs: string[]

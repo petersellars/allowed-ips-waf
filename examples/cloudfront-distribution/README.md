@@ -32,6 +32,11 @@ Install the project's dependencies using npm.
 $ npm install
 ```
 
+Compile the code.
+```
+npm run build
+```
+
 Deploy the sample CloudFormation stack to an AWS account.
 ```
 $ cdk deploy --outputs-file outputs.json --require-approval never

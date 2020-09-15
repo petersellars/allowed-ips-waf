@@ -1,12 +1,34 @@
 {
   "name": "allowed-ips-waf",
-  "version": "0.1.0",
+  "version": "1.62.0",
+  "description": "A WAF CDK Construct that allows an specified IP range access to an Amazon CloudFront distribution, an Amazon API Gateway REST API, or an Application Load Balancer",
+  "keywords": [
+    "aws",
+    "cdk",
+    "construct",
+    "constructs",
+    "AWS::WAFv2",
+    "allowed",
+    "allow",
+    "ip",
+    "cidr",
+    "ips",
+    "ipv4",
+    "whitelist",
+    "allowlist",
+    "waf",
+    "web",
+    "application",
+    "firewall",
+    "fire",
+    "wall"
+  ],
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aws-samples/allowed-ips-waf.git"
+    "url": "https://github.com/awslabs/allowed-ips-waf.git"
   },
   "scripts": {
     "build": "tsc",

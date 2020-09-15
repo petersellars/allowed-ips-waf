@@ -5,10 +5,6 @@
     "cloudfront-distribution": "bin/cloudfront-distribution.js"
   },
   "license": "Apache-2.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/aws-samples/allowed-ips-waf.git"
-  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
