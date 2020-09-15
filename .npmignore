@@ -8,3 +8,9 @@ cdk.out
 examples
 
 allowed-ips-waf-*.tgz
+
+.idea
+
+jest.config.js
+
+tsconfig.json
