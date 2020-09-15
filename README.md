@@ -7,7 +7,8 @@ To install the package from a npm repository run:
 $ npm i allowed-ips-waf
 ```
 
-Example: Using the Construct to define IPs allowed to access an Amazon CloudFront distribution for an S3 based web-site.
+Example:  
+Using the Construct to define IPs allowed to access an Amazon CloudFront distribution for an S3 based web-site.
 ```typescript
 import { App, Stack, RemovalPolicy } from '@aws-cdk/core';
 import * as cloudfront from '@aws-cdk/aws-cloudfront';
