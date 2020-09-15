@@ -1,23 +1,24 @@
-# CloudFront Distribution WAF
+# CloudFront Distribution WAF Sample Stack
 
 A WAF that allows a specified IP range access to an Amazon CloudFront distribution.  
 
-## Deploy the Example to an AWS Account
+## Deploy the Sample to an AWS Account
 
-Install the AWS CDK
+Install the AWS CDK.
 ```
 $ npm install -g aws-cdk
 ```
 
-Bootstrap the AWS CDK deployment environment
+Bootstrap the AWS account to enable CDK asset deployment.
 ```
 $ cdk bootstrap
 ```
 
-**In the example's root directory**
+**In the sample's root directory**
 
-Configure IPv4 CIDR range / individual addresses in the "allowed-ips.json" file at the root of this project.
-For example:
+Configure IPv4 CIDR ranges and/or individual addresses allowed to access the distribution using the "allowed-ips.json" file at the root of this project.  
+
+**Example**
 ```json
 [
   "35.180.0.0/16",
@@ -26,16 +27,16 @@ For example:
 ]
 ```
 
-Install the project's dependencies
+Install the project's dependencies using npm.
 ```
 $ npm install
 ```
 
-Then, you can deploy the CloudFormation stack by running this command
+Deploy the sample CloudFormation stack to an AWS account.
 ```
 $ cdk deploy --outputs-file outputs.json --require-approval never
 ```
-This will write the stacks output to an "outputs.json" file and deploy the stack without pausing to ask for an approval.
+This will write the stacks output to an "outputs.json" file and deploy the stack without pausing to ask for approvals.
 
 ## Useful commands
 
