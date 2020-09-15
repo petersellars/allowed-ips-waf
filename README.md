@@ -2,9 +2,10 @@
 
 An AWS CDK Construct for defining AWS WAFs that allow a specified IP range access to an Amazon CloudFront distribution, an Amazon API Gateway REST API, or an Application Load Balancer.
 
-To install the package from a npm repository run:
+## Getting Started
+Install the allowed-ips-waf package using npm.
 ```shell
-$ npm i allowed-ips-waf
+$ npm install allowed-ips-waf
 ```
 
 **Example** 
