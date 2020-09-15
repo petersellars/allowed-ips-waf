@@ -5,6 +5,7 @@
   "keywords": [
     "aws",
     "cdk",
+    "aws-wafv2",
     "construct",
     "constructs",
     "AWS::WAFv2",
