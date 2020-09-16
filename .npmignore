@@ -14,3 +14,5 @@ allowed-ips-waf-*.tgz
 jest.config.js
 
 tsconfig.json
+
+test/
