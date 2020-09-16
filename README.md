@@ -111,7 +111,7 @@ new s3deploy.BucketDeployment(
 ```
 
 ## Useful commands
-
+ * `npm install`     install package dependencies
  * `npm run build`   compile typescript to js
  * `npm run watch`   watch for changes and compile
  * `npm run test`    perform the jest unit tests
