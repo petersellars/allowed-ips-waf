@@ -16,3 +16,6 @@ out.yml
 .idea/
 
 *.tgz
+
+package-lock.json
+

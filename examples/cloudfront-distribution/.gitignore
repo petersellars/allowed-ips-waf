@@ -16,3 +16,6 @@ out.yml
 .idea/
 
 outputs.json
+
+package-lock.json
+
